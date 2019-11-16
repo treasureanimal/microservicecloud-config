@@ -19,6 +19,13 @@ eureka:
     fetch-registry: false #不通过eureka获取注册信息
     service-url: 
       defaultZone: http://user:123456@eureka7001:7001/eureka/
+spring:
+  security:
+    basic:
+      enabled: false
+    user:
+      name: user
+      password: 123456
 ---
 server: 
   port: 7001 #注册中心占用7001端口,冒号后面必须要有空格
@@ -36,3 +43,10 @@ eureka:
     fetch-registry: false #不通过eureka获取注册信息
     service-url: 
       defaultZone: http://user:123456@eureka7001:7001/eureka/
+spring:
+  security:
+    basic:
+      enabled: false
+    user:
+      name: user
+      password: 123456

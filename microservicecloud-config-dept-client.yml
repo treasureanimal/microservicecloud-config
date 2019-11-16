@@ -29,7 +29,7 @@ mybatis:
 eureka: 
   client: #客户端注册进eureka服务列表内
     service-url: 
-      defaultZone: http://user:123456@eureka7001:7001/eureka/
+      defaultZone: http://eureka7001:7001/eureka/
   instance:
     instance-id: dept-8001
     prefer-ip-address: true
@@ -41,7 +41,7 @@ info:
   build.version: $project.version$
 ---
 server:
-  port: 8002
+  port: 8001
 spring: 
    profiles: test
    application: 
@@ -69,9 +69,9 @@ mybatis:
 eureka: 
   client: #客户端注册进eureka服务列表内
     service-url: 
-      defaultZone: http://user:123456@eureka7001:7001/eureka/
+      defaultZone: http://eureka7001:7001/eureka/
   instance:
-    instance-id: dept-8002
+    instance-id: dept-8001
     prefer-ip-address: true
  
 info:

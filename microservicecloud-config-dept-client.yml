@@ -6,10 +6,10 @@ spring:
 server:
   port: 8001
 spring: 
-   profiles: dev
-   application: 
+  profiles: dev
+  application: 
     name: microservicecloud-config-dept-client
-   datasource:
+  datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/cloudDB01?useUnicode=true&characterEncoding=utf8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
@@ -43,12 +43,12 @@ info:
 server:
   port: 8001
 spring: 
-   profiles: test
-   application: 
+  profiles: test
+  application: 
     name: microservicecloud-config-dept-client
-   datasource:
+  datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-   driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/cloudDB02?useUnicode=true&characterEncoding=utf8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
 
     username: root
